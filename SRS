@@ -1,18 +1,18 @@
 Recommended Practice for Software Requirements Specifications
 (Based on IEEE Standard 830)
 1. Introduction: This section contains an overview of the complete document.
+  1.1 Purpose What is the purpose of this document, and for whom is it written?
+    The purpose of this document is to outline the requirements and specifications of the software package that will be developed in the future. It will serve as a guideline that we can refer back to when going through with the future steps of the development process.
 
-1.1 Purpose What is the purpose of this document, and for whom is it written?
+  1.2 Scope An identification of the product to be developed, what it do (and what does it not do), why is the product being developed (including a precise description of its benefits, goals and objectives)?
+    The software package being developed will work as an application used by hospitals to register patients in the database along with their medical history and personal information. It will then be able to be accessed by various staff roles of said hospital which can all edit the data in a different way. For example. Nurses can order tests but doctors will be able to prescribe medication and see the results of said tests. In addition, each hospital case will be forwarded to a billing department which will have zero access to private information other than billing for the given services.
 
-1.2 Scope An identification of the product to be developed, what it do (and what does it not do), why is the product being developed (including a precise description of its benefits, goals and objectives)?
+  1.3 Definitions, acronyms and abbreviations This subsection contains definitions of all the terms, acronyms and abbreviations used in the document. Special attention should be paid to the clarification of terms and concepts from the domain of Application.
+    
 
-1.3 Definitions, acronyms and abbreviations This subsection contains definitions of all the terms, acronyms and abbreviations used in the document. Special attention
-should be paid to the clarification of terms and concepts from the domain of
-Application.
+  1.4 References References to all documents that are referred to in the remainder of the requirements specification.
 
-1.4 References References to all documents that are referred to in the remainder of the requirements specification.
-
-1.5 Overview This subsection contains an outline of the remainder of the document.
+  1.5 Overview This subsection contains an outline of the remainder of the document.
 
 2. General Description This section contains a description of matters that concern the overall product and its requirements. It provides a perspective for understanding the specific requirements from section 3 of this document.
 
@@ -49,7 +49,7 @@ specification is the main starting point for the design phase.
 
 3.1.1 Functional requirement 1
 
-3.1.1.1Introduction A description of the purpose of this function and the
+3.1.1.1 Introduction A description of the purpose of this function and the
 approaches and techniques used. The introduction should include
 information to clarify the intent of the function.
 
