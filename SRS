@@ -20,21 +20,55 @@ Recommended Practice for Software Requirements Specifications
 interfaces with those components should be described. In this section, we also give
 an identification of the hardware to be used.
 
+The software system is an independent product designed specifically for emergency room management.
+The software is designed to operate on standard hardware configurations commonly found in hospital environments. Specific hardware requirements, such as server specifications, will be identified during the system development phase.
+The software may interface with other components within the hospital's broader information system. Identify interfaces with existing hospital databases, patient records, or external systems that may contribute or retrieve information.
+[filter] Clarify how the emergency room management system interacts with other hospital systems, ensuring seamless data flow and integration.
+[filter] Here we will say the hardware to be used, including server configurations, workstations, and any specialized hardware devices required for certain functionalities.
+[filter] We will Discuss any integration considerations with existing hospital hardware infrastructure.
+
 2.2 Product functions An overview of the functions of the system to be delivered. This should be confined to an overview. A detailed discussion of the functions is given in
 section 3 of the requirements specification.
+
+System Overview: The system to be delivered serves as a comprehensive emergency room management solution. The functions of the system are designed to streamline patient information management, diagnosis, prescription, billing, and overall operational efficiency within the emergency room.
+Key Functions:
+Capture Patient Traits: Admitting staff can input patient information, including name, address, medical history, and non-sensitive details.
+Record Billing Information: The system records billing information, capturing entry dates, admission locations, and charges for each patient.
+Nurse Functions: Nurses have access to patient vitals, medical history, and can order X-rays and laboratory tests. 
+Doctor Functions: Doctors and nurses share privileges for prescribing medications and applying diagnoses. Doctors can view and manage one patient record at a time, avoiding overlapping access.
+Finance Staff Functions: Finance staff can access billing information for each patient and generate overall bills, accumulating costs of medications, X-rays, and lab tests.
+Identification: The software may interface with other components within the hospital's broader information system. Identify interfaces with existing hospital databases, patient records, or external systems that may contribute or retrieve information.
+Interactions: Clarify how the emergency room management system interacts with other hospital systems, ensuring seamless data flow and integration.
 
 2.3 User characteristics An indication of general user characteristics, in as far as these are relevant for the requirements specification. Experience, training and technical
 expertise of future users may influence specific requirements of the system to be
 Developed.
 
+Experience: Admitting staff may have varying levels of experience in handling patient information and using software systems.
+Training: Training programs may be required to familiarize admitting staff with the user-friendly form interface for capturing patient traits.
+Technical Expertise: Basic technical skills are expected, including data entry and interaction with graphical user interfaces.
+2.3.2 Nurses
+Experience: Nurses are experienced healthcare professionals with knowledge of medical procedures and patient care.
+Training: Training may be necessary for utilizing the system's functionalities, such as ordering X-rays and lab tests.
+Technical Expertise: Moderate technical skills are expected, with proficiency in using the system for accessing vitals and medical history.
+2.3.3 Doctors
+Experience: Doctors are highly experienced medical professionals with expertise in diagnosis and treatment.
+Training: Training may be required for utilizing the system's prescribing and diagnosing functionalities.
+Technical Expertise: Moderate to advanced technical skills are expected, particularly in managing patient records and making medical decisions within the system.
+
 2.4 General Constraints An indication of any other constraints that apply. These may concern government regulations, hardware constraints, security regulations, and so
 on. Again, we are concerned with the rationale at this point. A further elaboration
 follows in section 3 of this document.
+
+TBD
 
 2.5 Assumptions and dependencies This does not concern constraints on the system being developed, but things which may influence the requirements specification once they change. As an example, we may think of the availability of certain supporting
 software, such as some given operating system or numeric library. If that operating
 system or library turns out not to be available, the requirements specification will
 have to be adapted accordingly.
+
+-The system assumes that database management will be handled by one person at a time.
+-Dependency on server maintenance and login functionality, with one person maintaining the server for now (TBD for future enhancements).
 
 3. Specific Requirements This section contains all the details which are relevant for the
 design phase to follow. The ordering given here is just one way to present the specific
