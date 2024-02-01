@@ -190,17 +190,25 @@ software is also discussed here.
 3.2.4 Communications interfaces An example is a communication protocol
 for LANs.
 
+LAN Protocol: Here we will discuss the communication protocol used within the hospital's local network to ensure seamless data transfer.
+Data Encryption: Here we will address any encryption protocols applied to secure communication between system components.
+
 3.3 Performance requirements Performance requirements encompass both static and dynamic requirements. Static requirements concern, amongst others, the number of terminals to be connected and the number of users that can be handled concurrently. Dynamic requirements concern the operational performance of the system: how frequently will certain functions be called for and how fast should the system’s reaction be. It is important that these requirements be stated in measurable terms.
+
+Response Time Targets: For response time targets, we will define acceptable response times for different system functions (e.g., patient record retrieval, billing information access).
+Peak Usage Scenarios: For peak usage scenarios we will identify scenarios that represent peak usage (e.g., simultaneous access by multiple doctors and nurses) and set performance expectations accordingly.
 
 3.4 Design constraints Design constraints may result from such things as
 the prescribed use of certain standards or hardware.
 
 3.4.1 Standards compliance Which existing standards or regulations must be followed, and what requirements result from these. For example, certain
 report formats or audit procedures may be prescribed.
+-The system shall comply with relevant standards and regulations in emergency room operations.
 
 3.4.2 Hardware limitations A description of the characteristics of the
 hardware environment, in as far as they lead to software requirements. An
 example of this might be the amount of memory available.
+-The system shall operate within the specified hardware environment, ensuring compatibility and optimal performance.
 
 3.5 Attributes In this section, particular attention is paid to quality aspects. These
 requirements must be measurable and verifiable. They must be stated in objective
@@ -210,14 +218,18 @@ Attributes.
 3.5.1 Availability Factors that guarantee a certain level of availability, such as restart procedures. In this subsection we may also enlist requirements
 regarding fault tolerance (with respect to both hardware failures and
 software failures).
+-The system shall ensure a high level of availability, with restart procedures in case of failures.
 
 3.5.2 Security Requirements regarding unauthorized access and other forms of misuse. Certain cryptographic techniques may be prescribed, and we
 may put constraints on the communication between different parts of the
 System.
+-Access control mechanisms shall be implemented to prevent unauthorized access to patient records.
 
 3.5.3 Maintainability Requirements to guarantee a certain level of
 maintainability of the system, such as a maximum allowable coupling
 between components.
+-The system shall be designed for easy maintenance, minimizing coupling between components.
 
 3.6 Other requirements A description of requirements that are specific to certain
 software, and which have not been discussed yet.
+-To be determined based on further discussions and specific software features that may arise during development.
