@@ -8,10 +8,77 @@ Recommended Practice for Software Requirements Specifications
     The software package being developed will work as an application used by hospitals to register patients in the database along with their medical history and personal information. It will then be able to be accessed by various staff roles of said hospital which can all edit the data in a different way. For example. Nurses can order tests but doctors will be able to prescribe medication and see the results of said tests. In addition, each hospital case will be forwarded to a billing department which will have zero access to private information other than billing for the given services.
 
   1.3 Definitions, acronyms and abbreviations This subsection contains definitions of all the terms, acronyms and abbreviations used in the document. Special attention should be paid to the clarification of terms and concepts from the domain of Application.
-    
+    a. Laboratory Test:
+      i. Hematologic Laboratory: This is the lab that perform a test on the whole blood fluid to inspecting multiple things as listed below.
+        1. Red Blood Cell (RBC): 
+          - Quantity: The number of red blood cells in a sample.
+          - Hemoglobin Levels: The amount of hemoglobin, the protein that carries oxygen in RBCs.
+          - Hematocrit: The proportion of blood that is occupied by RBCs, expressed as a percentage.
+
+        2. White Blood Cell (WBC): Measures the number of white blood cells, providing insights into the body's immune system and potential infections.
+          - Total WBC Count: The total number of white blood cells in a specified volume of blood.
+          - WBCs Count: The proportion of blood that is occupied by WBCs, expressed as a percentage.
+          - WBCs Ratio: The percentages of different types of white blood cells, such as 
+              Neutrophils
+              Lymphocytes
+              Monocytes
+              Eosinophils
+              Basophils.
+
+        3. Liver Function Test: A series of blood tests assessing liver health by measuring enzymes, proteins, and substances produced by the liver.
+          - Alanine Aminotransferase (ALT) and Aspartate Aminotransferase (AST): Enzymes released by damaged liver cells.
+          - Alkaline Phosphatase (ALP): An enzyme that may indicate liver or bone issues.
+          - Bilirubin: A product of the breakdown of red blood cells, elevated levels may indicate liver or bile duct issues.
+
+        4. Renal Function Test: Evaluates kidney function by measuring levels of creatinine, urea, and other waste products in the blood.
+          - Creatinine: A waste product from muscle metabolism; elevated levels may indicate kidney dysfunction.
+          - Blood Urea Nitrogen (BUN): The amount of nitrogen in the blood from the waste product urea; elevated levels may indicate kidney issues.
+
+        5. Electrolyte Test: Measures levels of essential electrolytes (sodium, potassium, chloride) to assess the body's fluid balance.
+          - Sodium (Na), Potassium (K), Chloride (Cl): Essential electrolytes that help maintain fluid balance and nerve function.
+          - Calcium (Ca) and Phosphate (PO4): Important for bone health and various physiological processes.
+
+      ii. Radiologic Laboratory:
+        1. X-ray: An imaging technique using ionizing radiation to create detailed pictures of the inside of the body, commonly used for bone imaging.
+        2. Computed Tomography (CT): A medical imaging technique that uses X-rays and computer processing to create cross-sectional images of the body.
+        3. Magnetic Resonance Image (MRI): A non-invasive imaging technique that uses a magnetic field and radio waves to create detailed images of internal structures.
+
+      iii. Urinary Test: A diagnostic test that analyzes a urine sample to assess kidney function, detect infections, and identify other health issues.
+      
+      iv. Stool Test: A diagnostic test that examines a stool sample to detect gastrointestinal issues, infections, or blood in the stool.
+
+    b. Prescription:
+      i. Injection:
+        1. Intramuscular Injection (IM): A method of delivering medication directly into the muscles, allowing for slow absorption and sustained effects.
+        2. Intravascular Injection (IV): The administration of medication or fluids directly into a vein, providing rapid and immediate effects.
+        3. Subcutaneous Injection (SC): The delivery of medication into the tissue just beneath the skin, allowing for slower absorption compared to intravascular injections.      
+      ii. Oral Medication: Medications administered through the mouth, typically in the form of tablets or liquids, based on the patient's diagnosis and medical condition.
 
   1.4 References References to all documents that are referred to in the remainder of the requirements specification.
-    n/a
+    Hematology Laboratory
+      https://www.brighamandwomens.org/pathology/clinical-pathology/hematology-laboratory
+    What Is Medical Radiologic Technology?
+      https://learn.org/articles/What_is_Medical_Radiologic_Technology.html
+    What Is an X-Ray Tech?
+      https://learn.org/articles/What_is_an_X-Ray_Tech.html
+    What Is Computed Tomography?
+      https://learn.org/articles/What_is_Computed_Tomography.html
+    Magnetic Resonance Imaging (MRI)
+      https://www.nibib.nih.gov/science-education/science-topics/magnetic-resonance-imaging-mri
+    Urinalysis
+      https://www.mayoclinic.org/tests-procedures/urinalysis/about/pac-20384907
+    Stool Test
+      https://my.clevelandclinic.org/health/diagnostics/25210-stool-test
+    Intramuscular Injections
+      https://www.rch.org.au/rchcpg/hospital_clinical_guideline_index/Intramuscular_Injections/
+    Intramuscular Injection
+      https://www.ncbi.nlm.nih.gov/books/NBK556121/
+    Everything to know about intravenous injections
+      https://www.medicalnewstoday.com/articles/intravenous-injection
+    Subcutaneous (SQ) injections
+      https://medlineplus.gov/ency/patientinstructions/000430.htm
+    Oral medication definition
+      https://www.lawinsider.com/dictionary/oral-medication
 
   1.5 Overview This subsection contains an outline of the remainder of the document.
 
