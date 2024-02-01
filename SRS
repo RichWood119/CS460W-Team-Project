@@ -2,33 +2,16 @@ Recommended Practice for Software Requirements Specifications
 (Based on IEEE Standard 830)
 1. Introduction: This section contains an overview of the complete document.
   1.1 Purpose What is the purpose of this document, and for whom is it written?
-    
-This document outlines the requirements for the development of a software system for managing patient information in an emergency room. It is written for the hospital staff organization and perhaps the project stakeholders who want this to happen.
-  
-1.2 Scope An identification of the product to be developed, what it do (and what does it not do), why is the product being developed (including a precise description of its benefits, goals and objectives)?
-The product to be developed is an intuitive software system designed to facilitate the management of patient information in an emergency room setting. This includes features for capturing and organizing patient traits, billing information, diagnoses, tests, and medications.
+    The purpose of this document is to outline the requirements and specifications of the software package that will be developed in the future. It will serve as a guideline that we can refer back to when going through with the future steps of the development process.
 
-What It Does (Inclusions): 
--Capture and store patient traits, such as name, address, and medical history. 
--Record billing information, including entry date, admission location, and charges. 
--Facilitate access to and management of patient information based on varying privileges for admitting staff, nurses, physicians, and finance staff. 
--Enable nurses to access vitals, prior medical history, order X-rays, and conduct lab tests. 
--Allow doctors and nurses to apply diagnoses and prescribe medications. 
--Provide finance staff with access to billing information for generating overall bills.
--Allow doctors to have overlapping access to any patient's record.
-
-What It Does Not Do (Exclusions): 
--Include specific details that could compromise patient privacy or sensitive information.
--Allow nurses to prescribe medications. (only doctor's can)
-
-Why Is the Product Being Developed:
-The product is being developed to address the specific needs of emergency room operations such as enhancing the process of capturing, accessing, and managing patient information,
-improving the accuracy and accessibility of patient records, and facilitating billing processes and generating comprehensive bills for patients.
+  1.2 Scope An identification of the product to be developed, what it do (and what does it not do), why is the product being developed (including a precise description of its benefits, goals and objectives)?
+    The software package being developed will work as an application used by hospitals to register patients in the database along with their medical history and personal information. It will then be able to be accessed by various staff roles of said hospital which can all edit the data in a different way. For example. Nurses can order tests but doctors will be able to prescribe medication and see the results of said tests. In addition, each hospital case will be forwarded to a billing department which will have zero access to private information other than billing for the given services.
 
   1.3 Definitions, acronyms and abbreviations This subsection contains definitions of all the terms, acronyms and abbreviations used in the document. Special attention should be paid to the clarification of terms and concepts from the domain of Application.
     
 
   1.4 References References to all documents that are referred to in the remainder of the requirements specification.
+    n/a
 
   1.5 Overview This subsection contains an outline of the remainder of the document.
 
@@ -78,9 +61,7 @@ Technical Expertise: Moderate to advanced technical skills are expected, particu
 on. Again, we are concerned with the rationale at this point. A further elaboration
 follows in section 3 of this document.
 
--Compliance with healthcare data privacy regulations (HIPAA, CCPA).
--Time constraints for the project completion.
--Compatibility with existing hospital policies and procedures.
+TBD
 
 2.5 Assumptions and dependencies This does not concern constraints on the system being developed, but things which may influence the requirements specification once they change. As an example, we may think of the availability of certain supporting
 software, such as some given operating system or numeric library. If that operating
@@ -106,19 +87,22 @@ specification is the main starting point for the design phase.
 3.1.1.1 Introduction A description of the purpose of this function and the
 approaches and techniques used. The introduction should include
 information to clarify the intent of the function.
+  Once a patient's information is within the database, hospital staff will be able to pull their file up and be able to edit their file based on the permissions of said hospital staff, different roles will have different permissions. 
 
-3.1.1.2Inputs A precise description of the function’s inputs(source,
+3.1.1.2 Inputs A precise description of the function’s inputs(source,
 quantities, range of acceptable values, and the like).
-hello
+  The inputs will be a variety of data fields that each hospital role will be able to see and interpret. These fields range from basic patient information such as name, address, medical history, allergies, prescribed medicine, etc. As more hospital roles are introduced, more fields are availible such as, new prescriptions, requested tests, test results, discharge instructions, billing information, and prices.
 
-3.1.1.3Processing A definition of the operations that must be performed,
+3.1.1.3 Processing A definition of the operations that must be performed,
 such as checking for acceptable values, reaction to abnormal
 situations, or a description of algorithms to be used. As an
 example of the later, one may think of the use of some
 mathematical model for strength computations within a CADprogram.
+  The operations that will mostly be used will primarily be a series of checks to see if the signed in user has access to the information that they are either trying to edit or view. An example of an abormal situation would be something such as a nurse being checked into the hospital as a patient. It would need to be handled how they would have access to their own file becuase their nurse credentials would give them more permissions than those of a normal patient. Algorithms would be used in the billing sector to calculate the patients balance.
 
 3.1.1.4 Outputs A precise description of the outputs(destination,
 quantities, error messages, and the like).
+  Editing the data would result in the next person in the chain of command being able to view and edit this information. In the end, once the services provided are sent to billing, the final output would be the patient's final balance. Error messages would include things such as someone trying to access something that their permissions do not allow or abnormal cases as listed above.
 
 3.2 External interface requirements
 
@@ -138,12 +122,6 @@ software is also discussed here.
 for LANs.
 
 3.3 Performance requirements Performance requirements encompass both static and dynamic requirements. Static requirements concern, amongst others, the number of terminals to be connected and the number of users that can be handled concurrently. Dynamic requirements concern the operational performance of the system: how frequently will certain functions be called for and how fast should the system’s reaction be. It is important that these requirements be stated in measurable terms.
-
-So for this project, general performance requirements:
-
-Operating System: Specify the required operating system for the servers and workstations.
-Database Management System: Identify the database system used for storing patient information.
-Subroutine Packages: List any necessary software packages or libraries that the system relies on.
 
 3.4 Design constraints Design constraints may result from such things as
 the prescribed use of certain standards or hardware.
