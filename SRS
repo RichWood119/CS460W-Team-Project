@@ -78,7 +78,9 @@ Technical Expertise: Moderate to advanced technical skills are expected, particu
 on. Again, we are concerned with the rationale at this point. A further elaboration
 follows in section 3 of this document.
 
-TBD
+-Compliance with healthcare data privacy regulations (HIPAA, CCPA).
+-Time constraints for the project completion.
+-Compatibility with existing hospital policies and procedures.
 
 2.5 Assumptions and dependencies This does not concern constraints on the system being developed, but things which may influence the requirements specification once they change. As an example, we may think of the availability of certain supporting
 software, such as some given operating system or numeric library. If that operating
