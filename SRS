@@ -139,6 +139,12 @@ for LANs.
 
 3.3 Performance requirements Performance requirements encompass both static and dynamic requirements. Static requirements concern, amongst others, the number of terminals to be connected and the number of users that can be handled concurrently. Dynamic requirements concern the operational performance of the system: how frequently will certain functions be called for and how fast should the system’s reaction be. It is important that these requirements be stated in measurable terms.
 
+So for this project, general performance requirements:
+
+Operating System: Specify the required operating system for the servers and workstations.
+Database Management System: Identify the database system used for storing patient information.
+Subroutine Packages: List any necessary software packages or libraries that the system relies on.
+
 3.4 Design constraints Design constraints may result from such things as
 the prescribed use of certain standards or hardware.
 
