@@ -1,7 +1,19 @@
 Use Case: DischargePatient
 
-Actors: Nurse, Doctor, Billing
+Actors: Nurse, Doctor, Billing, Patient, Admitting Staff
 
+Name: Discharge Patient
+
+Participating Actors: 
+Patient, Nurse, Doctor, Billing
+
+Entry Condition: 
+Patient has fulfilled all treatment
+Doctor submitting discharge request. Begins discharge process
+
+Exit Condition: Patient's info is removed from the system.
+
+Flow of Events:
 1. Patient has finished all required treatment and is ready for discharge.
 2. Doctor will request a discharge for Patient and prescribe any required medication
 3. Nurse will write any discharge requirements or notes for Patient
@@ -10,4 +22,5 @@ Actors: Nurse, Doctor, Billing
 6. Billing forwards this price back to Patient
 7. Patient will pay the price listed on his bill
 8. Patient is discharged from the hospital
-9. Patient's file is removed from the system.
+9. Patient's file is removed from the system by the Admitting Staff
+
