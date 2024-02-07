@@ -1,4 +1,4 @@
-1. Name: Admit Patient
+1. Name: AdmitPatient
 2. Participating Actors: Admitting Staff
 3. Entry Condition:
 -Patient is physically present at the emergency room.
