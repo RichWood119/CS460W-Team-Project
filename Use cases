@@ -1,0 +1,42 @@
+1. Name: Perform Laboratory Test
+2. Participating actor:  Laboratory Operator
+3. Entry condition:
+  - Laboratory Operator is logged into the system
+  - Patient has been registered in the system
+4. Exit condition:
+  - Laboratory tests are completed and results are recorded in the system
+5. Flow of events:
+  5.1 Laboratory Operator selects the patient for whom tests need to be performed.
+  5.2 System displays the list of available tests based on the patient's condition.
+  5.3 Laboratory Operator selects the desired tests to be performed.
+  5.4 System prompts Laboratory Operator to collect the necessary samples from the patient.
+  5.5 Laboratory Operator collects the samples and labels them appropriately.
+  5.6 Laboratory Operator performs the selected tests using the appropriate equipment.
+  5.7 System records the test results in the patient's record.
+6. Special requirements:
+  6.1 Access to patient records and test catalog.
+  6.2 Proper labeling and handling of samples.
+  6.3 Compliance with laboratory safety protocols.
+
+===
+
+1. Name: Assist Doctor with Patient Examination
+2. Participating actor:  Nurse
+3. Entry condition:
+  - Nurse is logged into the system
+  - Patient has been registered in the system
+4. Exit condition:
+  - Doctor has completed the examination and treatment plan for the patient.
+5. Flow of events:
+  5.1 Nurse receives notification of patient assignment or consults the patient list.
+  5.2 Nurse reviews the patient's medical history and current condition in the system.
+  5.3 Nurse prepares the examination room and necessary equipment.
+  5.4 Nurse escorts the patient to the examination room and assists them with any preliminary procedures (e.g., taking vital signs).
+  5.5 Nurse communicates relevant information to the doctor, such as the patient's chief complaint and any specific concerns.
+  5.6 Nurse assists the doctor during the examination by providing instruments, documenting findings, and addressing patient comfort needs.
+  5.7 Nurse carries out any procedures or treatments as directed by the doctor.
+  5.8 Nurse ensures proper documentation of the examination and treatment plan in the patient's record.
+6. Special requirements:
+  6.1 Coordination with the doctor and other healthcare staff.
+  6.2 Ability to follow medical instructions accurately.
+  6.3 Clear communication with the patient regarding procedures and expectations.
