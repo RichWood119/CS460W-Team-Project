@@ -1,0 +1,13 @@
+Use Case: DischargePatient
+
+Actors: Nurse, Doctor, Billing
+
+1. Patient has finished all required treatment and is ready for discharge.
+2. Doctor will request a discharge for Patient and prescribe any required medication
+3. Nurse will write any discharge requirements or notes for Patient
+4. After all above conditions are met, Patient's file is forwarded to Billing
+5. Based on the services provided, Billing will calculate the total price that Patient owes the hospital.
+6. Billing forwards this price back to Patient
+7. Patient will pay the price listed on his bill
+8. Patient is discharged from the hospital
+9. Patient's file is removed from the system.
