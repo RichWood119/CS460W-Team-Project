@@ -1,0 +1,17 @@
+1. Name: Admit Patient
+2. Participating Actors: Admitting Staff
+3. Entry Condition:
+-Patient is physically present at the emergency room.
+-Admitting Staff is logged into the system.
+4. Exit Condition:
+-Patient's information is successfully entered into the system.
+5. Flow of events:
+   1. Admitting Staff selects the "Admit Patient" option from the menu or display
+   2. System prompts admitting staff to enter patient's information: This will include details such as name, address, medical history, allergies, prescribed medication, emergency contact details, general patient info etc.
+   3. Admitting staff enters the required information
+   4. System verifies entered information for completeness and accuracy
+   5. If information is inaccurate or incomplete, system will prompt admitting staff to correct it.
+   6. Once all information is verified, system will save patient's record in database
+   7. System generates a unique patient ID
+   8. System displays a confirmation message indiciating it was a success.
+6. Special requirements: None
