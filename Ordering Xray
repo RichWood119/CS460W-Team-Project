@@ -1,1 +1,16 @@
+Name: OrderingXray
 
+Participating Actors: 
+Nurse, Patient
+
+Entry Conditions:
+Patient presents to hospital with injury or condition potentially requiring xray.
+
+Exit Condition:
+Xray is successfully ordered and results are added to the patient's report.
+
+Flow of Events:
+1. Patient presents to hospital with injury or condition potentially requiring xray
+2. Upon examination, Nurse determines that an xray is required
+3. Nurse logs into the system and orders an xray for the patient.
+4. Xray is successful and results are logged in patient's file.
