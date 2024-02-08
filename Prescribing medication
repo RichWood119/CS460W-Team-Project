@@ -1,1 +1,15 @@
-contents go here
+Use Case: Prescribing Medication
+1. Name: PrescribingMedications
+2. Participating Actors: Doctor
+3. Entry Condition: 
+-Doctor has recieved lab testing results, is able to make a diagnosis
+-Doctor is able to access patient's record
+4. Exit Condition:
+-Doctor successfully prescribed medication to the patient
+5. Flow of Events:
+  1. Doctor has recieved lab results, is able to make proper diagnosis.
+  2. Doctor then selects the patient's record.
+  3. Doctor selects the appropriate medications from the available options
+  4. Doctor may add whatever notes for prescription.
+  5. Confirmation message is displayed upon successful prescription.
+6. Special Requirements: None
