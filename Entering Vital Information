@@ -1,1 +1,17 @@
-test
+Name: EnteringVitals
+
+Participating Actors:
+Patient, Nurse
+
+Entry Condition:
+Patient is admitted/Treatment begins
+
+Exit Condition:
+Vitals have been successfully taken and results have been added to their record
+
+Flow of Events:
+1. Patient is admitted to the hospital
+2. Nurse is assigned to patient
+3. Treatment begins with Nurse taking the patients vitals
+4. After vitals have been taken, results are added to the patient's record
+
