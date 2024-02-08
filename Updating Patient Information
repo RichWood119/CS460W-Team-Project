@@ -5,7 +5,7 @@ Use Case: Update Patient Information
 -User is logged into the system
 -Patient's record is accessible
 4. Exit Condition:
-Patient's information is successfully updated in the system.
+-Patient's information is successfully updated in the system.
 5. Flow of events:
   1. User select's the patient's record.
   2. Select display options to update/edit patient information.
