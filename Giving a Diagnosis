@@ -1,1 +1,18 @@
+Name:
+GivingDiagnosis
 
+Participating Actors:
+Doctor, Patient
+
+Entry Condition:
+Doctor has received test results once they are in the system.
+
+Exit Condition:
+Patient has received diagnosis and the information is added to the patient's record
+
+Flow of events:
+1. Doctor receives test results once they are in the system
+2. Doctor evaluates test results.
+3. Doctor explains test results to the patient.
+4. After discussion with patient, Doctor is able to make a diagnosis
+5. Doctor makes a diagnosis and adds the information to the patient's record.
