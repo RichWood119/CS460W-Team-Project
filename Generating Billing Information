@@ -1,1 +1,15 @@
-
+Use Case: Generate Billing Info
+1. Name: GenerateBillingInfo
+2. Participating Actors: BillingStaff
+3. Entry Condition:
+-Billing staff is logged into the system.
+-Patient's record and billing details are accessible
+4. Exit Condition:
+-Billing information is successfully generated for the patient.
+5. Flow of Events:
+  1. Billing staff selects the patient's record.
+  2. System retrieves relevant information billing information such as length of observation, presribed medications, and test costs.
+  3. Billing staff reviews and verifies the accumulated charges.
+  4. System generates an itemzied bill for the patient.
+  5. Billing staff validates the generated bill and prepares it for delivery.
+6. Special Requirements: None.
