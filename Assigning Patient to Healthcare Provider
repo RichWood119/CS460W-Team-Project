@@ -1,0 +1,9 @@
+Assigning Patient to Healthcare Provider
+Participating actor: Admitting Staff, Doctor
+Entry condition: New patient registered in the system
+Exit condition: Patient successfully assigned to a healthcare provider
+Flow of events:
+  - Admitting staff reviews the list of available healthcare providers.
+  - Admitting staff assigns the patient to an available healthcare provider based on workload, specialization, or other criteria.
+  - System notifies the assigned healthcare provider about the new patient assignment.
+Special requirements: Efficient assignment process to ensure timely patient care, consideration of provider workload and expertise.
