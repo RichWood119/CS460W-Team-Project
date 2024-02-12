@@ -37,4 +37,6 @@ Action items and those assigned to complete them.
     Use cases and Actors.
       Mark:       Lab Operator, Nurse 
       Nina:       Admitting Staff
-      Richard:    Admitting Staff, Nurse, Doctor, Billing Staff
+      Richard:    Admitting Staff, Nurse, Doctor, Billing Staff, Discharge Patient Use Case
+                  Entering Vital Information, Generating Billing Information, Giving a Diagnosis
+                  Ordering Xray, Prescribing medication, Updating Patient Information
