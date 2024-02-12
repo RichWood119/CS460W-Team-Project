@@ -1,0 +1,11 @@
+Requesting Consultation with Specialist:
+
+Participating actor: Physician
+Entry condition: Physician reviewing patient case requiring specialist input
+Exit condition: Consultation requested and scheduled with specialist
+Flow of events:
+Physician reviews the patient's medical history and diagnostic findings.
+Physician determines the need for specialist consultation based on the complexity of the case.
+Physician initiates a request for consultation through the system, providing relevant patient information and reasons for consultation.
+System schedules the consultation appointment with the appropriate specialist and notifies both the physician and specialist.
+Special requirements: Coordination with specialist schedules, documentation of consultation outcomes.
