@@ -102,8 +102,8 @@ System Overview: The system to be delivered serves as a comprehensive emergency 
 Key Functions:
 Capture Patient Traits: Admitting staff can input patient information, including name, address, medical history, and non-sensitive details.
 Record Billing Information: The system records billing information, capturing entry dates, admission locations, and charges for each patient.
-Nurse Functions: Nurses have access to patient vitals, medical history, and can order X-rays and laboratory tests. 
-Doctor Functions: Doctors and nurses share privileges for prescribing medications and applying diagnoses. Doctors can view and manage one patient record at a time, avoiding overlapping access.
+Nurse Functions: Nurses have access to patient vitals, medical history, and can order X-rays and laboratory tests. add comments
+Doctor Functions: Doctors and nurses share privileges for prescribing medications and applying diagnoses. Doctors can view and manage one patient record at a time, avoiding overlapping access. add notes.
 Finance Staff Functions: Finance staff can access billing information for each patient and generate overall bills, accumulating costs of medications, X-rays, and lab tests.
 Identification: The software may interface with other components within the hospital's broader information system. Identify interfaces with existing hospital databases, patient records, or external systems that may contribute or retrieve information.
 Interactions: Clarify how the emergency room management system interacts with other hospital systems, ensuring seamless data flow and integration.
