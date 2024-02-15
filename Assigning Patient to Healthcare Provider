@@ -1,5 +1,5 @@
 Assigning Patient to Healthcare Provider
-Participating actor: Admitting Staff, Doctor
+Participating actor: Admitting Staff, Doctor, Patient
 Entry condition: New patient registered in the system
 Exit condition: Patient successfully assigned to a healthcare provider
 Flow of events:
@@ -7,3 +7,38 @@ Flow of events:
   - Admitting staff assigns the patient to an available healthcare provider based on workload, specialization, or other criteria.
   - System notifies the assigned healthcare provider about the new patient assignment.
 Special requirements: Efficient assignment process to ensure timely patient care, consideration of provider workload and expertise.
+
+======
+
+Scenario: Assigning Patient to Healthcare Provider
+
+Participants: Admitting Staff (AS), Doctor (Dr. Johnson), Patient (Mr. Smith)
+
+Entry Condition:
+A new patient, Mr. Smith, has been registered in the system.
+
+Exit Condition:
+Mr. Smith is successfully assigned to a healthcare provider.
+
+Flow of Events:
+
+  1. Admitting Staff Review Available Healthcare Providers:
+    - AS logs into the system and accesses the list of available healthcare providers.
+    - AS considers factors such as the workload, specialization, and current availability of healthcare providers.
+  2. Determine the Most Suitable Healthcare Provider:
+    - AS reviews Mr. Smith's medical history and chief complaint to determine the most suitable healthcare provider.
+    - Considering Mr. Smith's condition and urgency, AS selects Dr. Johnson, an experienced physician specializing in internal medicine.
+  3. Assign Mr. Smith to Dr. Johnson:
+    - AS assigns Mr. Smith to Dr. Johnson within the system, ensuring proper documentation of the assignment.
+    - The system updates Mr. Smith's patient record to reflect the assignment to Dr. Johnson.
+  4. System Notifies Dr. Johnson:
+    - Upon assignment, the system automatically generates a notification and sends it to Dr. Johnson.
+    - Dr. Johnson receives the notification on his mobile device or workstation, indicating the new patient assignment.
+  5. Dr. Johnson Reviews Patient Assignment:
+    - Dr. Johnson accesses the patient assignment details within the system.
+    - Dr. Johnson reviews Mr. Smith's medical history and chief complaint to prepare for the upcoming patient consultation.
+
+Special Requirements:
+    - Admitting staff must efficiently assess available healthcare providers and assign patients based on workload and expertise to ensure timely and appropriate care.
+    - Consideration of the urgency and medical needs of the patient is crucial in assigning the most suitable healthcare provider.
+    - The system should provide real-time notifications to assigned healthcare providers to facilitate prompt patient care coordination.
