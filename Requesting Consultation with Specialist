@@ -9,3 +9,50 @@ Physician determines the need for specialist consultation based on the complexit
 Physician initiates a request for consultation through the system, providing relevant patient information and reasons for consultation.
 System schedules the consultation appointment with the appropriate specialist and notifies both the physician and specialist.
 Special requirements: Coordination with specialist schedules, documentation of consultation outcomes.
+
+======
+
+Scenario: Requesting Consultation with Specialist
+
+Participants: Physician (P), Specialist (S)
+
+Entry Condition:
+Physician is reviewing a patient case requiring specialist input.
+
+Exit Condition:
+Consultation is successfully requested and scheduled with the specialist.
+
+Flow of Events:
+
+  1. Physician Reviews Patient's Medical History:
+  
+    - P logs into the system and reviews the patient's medical history, including previous diagnoses, treatments, and current symptoms.
+    - P examines the latest diagnostic findings, such as laboratory test results, imaging studies, and other relevant medical reports.
+  
+  2. Physician Determines Need for Specialist Consultation:
+  
+    - Based on the complexity of the case and the severity of the patient's condition, P determines that specialist input is required for further evaluation and management.
+    - P identifies the specific area of expertise needed and decides to request a consultation with a specialist.
+  
+  3. Initiating Request for Consultation:
+  
+    - P accesses the system's consultation request feature and provides detailed patient information, including medical history, diagnostic findings, and reasons for the consultation.
+    - P selects the type of specialist needed (e.g., cardiologist, neurologist, oncologist) and provides any additional notes or specific questions for the specialist to address.
+    
+  4. System Schedules Consultation Appointment:
+  
+    - Upon receiving the consultation request, the system identifies the appropriate specialist based on their availability, expertise, and location.
+    - The system schedules a consultation appointment with the selected specialist, considering both P's and S's schedules.
+    - P and S receive notifications regarding the scheduled consultation appointment, including the date, time, and location.
+    
+  5. Consultation between Physician and Specialist:
+  
+    - P and S meet at the scheduled consultation appointment to discuss the patient's case in detail.
+    - P presents the patient's medical history, current condition, and diagnostic findings to S.
+    - S provides expert insights, recommendations, and treatment suggestions based on the consultation.
+    - P and S collaborate to develop a comprehensive management plan for the patient, which may include further diagnostic tests, treatment adjustments, or referrals to other specialists.
+
+Special Requirements:
+
+    - The system should facilitate seamless coordination between P and S to schedule the consultation appointment based on their availability.
+    - Documentation of the consultation outcomes, including recommendations and treatment plans, is essential for continuity of care and medical record keeping.
