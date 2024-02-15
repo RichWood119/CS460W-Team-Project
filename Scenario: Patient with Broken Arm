@@ -1,8 +1,8 @@
 Scenario Name: BrokenArmPatient
 Participating Actor Instances: Heather:Patient, Nurse:Ellen, Doctor:Wyatt
 Flow of Events:
-1. Heather, (in this scenario, being the patient) walks into the emergency room with a visibly broken arm, seeking medical assistance.
-2. Ellen, (in this scenario, being the nurse) is at the reception desk, welcomes Heather and quickly assesses her injury.
+1. Heather, the patient walks into the emergency room with a visibly broken arm, seeking medical assistance.
+2. Ellen, the nurse, is at the reception desk, welcomes Heather and quickly assesses her injury.
 3. Ellen registers Heather in the system, entering her personal information and the reason for her visit (broken arm).
 4. Ellen performs an initial assessment of Heather's broken arm, checking for any additional injuries or complications.
 5. Wyatt, the attending doctor, reviews Heather's case and conducts a thorough medical examination of her broken arm.
