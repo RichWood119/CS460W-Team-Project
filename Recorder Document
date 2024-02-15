@@ -38,7 +38,7 @@ Action items and those assigned to complete them.
     We assigned roles to each member and start dividing the SRS document.
   Deliverable 2
     Use cases and Actors.
-      Mark:       Lab Operator, Nurse, , Scenario
+      Mark:       Lab Operator, Nurse, Assigning Patient to Healthcare Provider, Requesting Consultation with Specialist, Scenario
       Nina:       Admitting Staff, Scenario
       Richard:    Admitting Staff, Nurse, Doctor, Billing Staff, Discharge Patient Use Case
                   Entering Vital Information, Generating Billing Information, Giving a Diagnosis
