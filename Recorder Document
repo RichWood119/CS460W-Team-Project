@@ -15,9 +15,13 @@ Date, time and location of meeting, beginning time and end time
     2/12  9.55-11.10 AM Dana 318 (During class time)
     2/15  12:30-1:30 PM Dana 230
 
-Team leader name and recorder name
+Team leader name and recorder name:
+Deliverable 1:
   Leader: Richard Wood
   Recorder: Mark Pimpa
+Deliverable 2:
+  Leader: Nina Madeyanda
+  Recorder: Richard Wood
 
 Members present and those not present: Everyone presented.
 2/8 (Richard & Nina)
@@ -32,17 +36,17 @@ Detailed summary of discussions
   Deliverable 2
     Determine use cases for each actor.
     Determine scenarios.
-
 Action items and those assigned to complete them.
   Deliverable 1
     We assigned roles to each member and start dividing the SRS document.
   Deliverable 2
-    Use cases and Scenarios. 
+    We assigned different use cases for each of us to fulfill/cover as well as some scenario:
+
       Mark:       Lab Operator, Nurse, Assigning Patient to Healthcare Provider, Requesting 
                   Consultation with Specialist, Scenario for these use case:
                       - Assigning Patient to Healthcare Provider
                       - Requesting Consultation with Specialist
-      Nina:       Admitting Staff, Scenario
-      Richard:    Admitting Staff, Nurse, Doctor, Billing Staff, Discharge Patient Use Case
-                  Entering Vital Information, Generating Billing Information, Giving a Diagnosis
-                  Ordering Xray, Prescribing medication, Updating Patient Information, Scenario
+      Nina:       Use Cases: Admitting Patient, Generating Billing Information, Updating Patient Information, Prescribing Medication
+                  Scenario: Patient With Broken Arm
+      Richard:    Use Cases: Discharge Patient, Entering Vital Information, Giving a Diagnosis, Ordering Xray
+                  Scenario:
