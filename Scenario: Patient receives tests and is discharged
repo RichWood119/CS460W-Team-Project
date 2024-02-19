@@ -1,0 +1,21 @@
+Scanario Name: PatientCheckup
+Participating Actors: Patient:John, Nurse: Jane, Doctor: Derek, Billing Employee: Aaron.
+
+Flow of Events:
+1. John is admitted to the hospital claiming that he has not been feeling well lately.
+2. After being admitted, John meets his nurse Jane.
+3. After explaining his current health and symptoms to Jane, she determines that some tests need to be ran to determine the cause of John's health.
+4. Nurse Jane begins by taking John's vitals and ordering a variety of tests to attempt to determine the cause of John's health.
+5. After taking vitals and tests, Jane will add any relevant information into John's file and pass the informaton along to the doctor, Derek.
+6. Doctor Derek arrives to the room with the results of the tests ready to explain the results to John.
+7. Derek explains that his vitals appear normal and all of his test results do not constitute any serious health concerns.
+8. Derek will formally write a discharge notice in John's file to begin his discharge process as no further treatment is neccessary.
+9. Nurse Jane will add comments to the discharge to suggest steps that John can do to help himself feel better.
+10. Jane will write in the discharge comments that extra rest is suggested for the next few days and if symptoms dont improve within 5 days, to try taking over the counter medicine.
+11. John's file is forwarded to billing
+12. Aaron, the billing employee receives the John's file containing the services provided.
+13. After reviewing the file, Aaron generates a list of charges for each test administered to John.
+14. After formulating the bill, Aaron forwards this bill back to John
+15. John will pay the bill.
+16. After paying his bill, John leaves the hospital
+17. John's file is automatically removed from the database.
