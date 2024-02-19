@@ -49,4 +49,4 @@ Action items and those assigned to complete them.
       Nina:       Use Cases: Admitting Patient, Generating Billing Information, Updating Patient Information, Prescribing Medication
                   Scenario: Patient With Broken Arm
       Richard:    Use Cases: Discharge Patient, Entering Vital Information, Giving a Diagnosis, Ordering Xray
-                  Scenario:
+                  Scenario: Patient receiving tests for wellness visit
