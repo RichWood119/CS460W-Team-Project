@@ -1,0 +1,18 @@
+Scenario Name: AllergicReactionPatient
+Participating Actor Instances: Patient:Emily, Alexa:Nurse, Emily:Doctor
+Flow of Events:
+1. Emily, the patient, arrives at the emergency room exhibiting symptoms of an allergic reaction, like hives and difficulty breathing.
+2. Alexa, the nurse on duty, quickly attends to Emily, recognizing the severity of her condition, and goes through emergency protocols.
+3. Alexa promptly registers Emily in the system, noting her personal information and the nature of her allergic reaction.
+4. Alexa assesses Emily's symptoms, checking her vital signs and administering emergency treatment (i.e epipen injection) to better her condition.
+5. Olivia, the attending doctor, is alerted to Emily's case and rushes to assess her condition further.
+6. Olivia conducts a thorough examination of Emily's allergic reaction, reviewing her medical history and identifying potential triggers.
+7. Based on the examination, Olivia orders additional tests such as blood work to identify the specific allergen causing Emily's reaction.
+8. Alexa assists Olivia in performing the necessary tests, ensuring timely and accurate results for diagnosis.
+9. Once the tests are completed, Olivia reviews the results to confirm the diagnosis and determines the appropriate treatment plan, to alleviate symptoms.
+10. Olivia discusses the treatment options with Emily, providing education on managing her allergies and avoiding triggers in the future.
+11. Alexa provides Emily with detailed instructions on how to monitor her symptoms at home and when to seek further medical attention if necessary.
+12. Olivia schedules a follow-up appointment for Emily to monitor her progress and adjust the treatment plan as needed.
+13. After the treatment plan has been established, Alexa notifies the billing staff of the services provided to Emily, documenting the procedures/tests performed and any medications administered during her visit.
+
+
