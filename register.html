@@ -4,23 +4,31 @@
     <title>Registration Form</title>
 </head>
 <body>
-    <h2>Registration Form</h2>
-
-    <form action="/submit_registration" method="post">
+    <form id="registrationForm">
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username" required><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        
         <label for="password">Password:</label><br>
         <input type="password" id="password" name="password" required><br>
-        
-        <label for="confirm_password">Confirm Password:</label><br>
-        <input type="password" id="confirm_password" name="confirm_password" required><br>
-        
-        <input type="submit" value="Register">
+        <label for="role">Role:</label><br>
+        <select id="role" name="role">
+            <option value="Doctor">Doctor</option>
+            <option value="Nurse">Nurse</option>
+            <option value="Billing Staff">Billing Staff</option>
+            <option value="Admitting Staff">Admitting Staff</option>
+        </select><br>
+        <input type="submit" value="Submit">
     </form>
+
+    <div id="popup" style="display: none;">
+        <p>Registration successful!</p>
+        <button onclick="window.location.href='index.html'">Go to Homepage</button>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('popup').style.display = 'block';
+        });
+    </script>
 </body>
-</html>
-<p>Already have an account? <a href="index.html">Login here</a></p>
+</html></select>
