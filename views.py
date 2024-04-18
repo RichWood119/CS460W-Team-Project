@@ -32,3 +32,14 @@ def get_dashboard_url(user):
         return reverse('billing_staff_dashboard')
     else:
         return reverse('dashboard')
+
+def admitting_staff_view(request):
+    if request.method == 'POST':
+        check_in_form = PatientCheckInForm(request.POST)
+        if check_in_form.is_valid():
+            check_in = check_in_form.save()
+            return redirect('admitting_dashboard.html')
+    else:
+        check_in_form = PatientCheckInForm()
+    context = {'check_in_form': check_in_form}
+    return render(request, 'admitting_dashboard.html', context)
