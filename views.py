@@ -1,3 +1,13 @@
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.views import LoginView, LogoutView
+from django.shortcuts import render, redirect
+from .forms import RegistrationForm, PatientCheckInForm
+from django.contrib import messages
+from django.urls import reverse, reverse_lazy
+from django.contrib.auth import login
+from django.views.generic import CreateView
+from .models import Patient, Profile, PatientCheckIn
+
 def doctor_dashboard(request):
     return render(request, 'doctor_dashboard.html')
 
