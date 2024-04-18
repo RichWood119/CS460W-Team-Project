@@ -1,3 +1,15 @@
+from django import forms
+from django.contrib.auth.forms import UserCreationForm
+from .models import PatientCheckIn, User, DoctorPatientInfo
+from django.contrib.auth.models import User
+
+class RegistrationForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
 class PatientCheckInForm(forms.ModelForm):
 
     class Meta:
@@ -19,3 +31,4 @@ class DoctorPatientInfoForm(forms.ModelForm):
         model = DoctorPatientInfo
         fields = ['heart_rate', 'blood_pressure', 'test_type',
                   'notes', 'prescriptions', 'diagnoses', 'discharge_notes']
+
