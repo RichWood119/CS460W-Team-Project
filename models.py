@@ -1,4 +1,11 @@
 #add these models into the project then do python manage.py makemigrations and python manage.py migrate (should work)
+import datetime
+from django.db import models
+from django.conf import settings
+from django.contrib.auth.models import User
+from django.shortcuts import render, redirect,
+from .forms import DoctorPatientInfoForm
+
 class PatientCheckIn(models.Model):
     date_time = models.DateTimeField()
     patient = models.ForeignKey('members.Patient', on_delete=models.CASCADE)
