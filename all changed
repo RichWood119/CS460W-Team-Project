@@ -1,0 +1,101 @@
+#under urls.py
+path('dashboard/doctor/input/<int:check_in_id>/', doctor_input, name='doctor_input'),
+
+#under views.py
+def doctor_dashboard(request):
+    open_cases = PatientCheckIn.objects.filter(doctor=request.user, status='Open')
+    form = DoctorPatientInfoForm(request.POST or None)
+
+    selected_case = None
+    if request.method == 'POST':
+        case_id = request.POST.get('patientCase')
+        if case_id:
+            selected_case = get_object_or_404(PatientCheckIn, id=case_id)
+            if form.is_valid():
+                info = form.save(commit=False)
+                info.patient_check_in = selected_case
+                info.save()
+                return redirect('doctor_dashboard')
+
+    context = {
+        'open_cases': open_cases,
+        'form': form,
+        'selected_case': selected_case
+    }
+    return render(request, 'doctor_dashboard.html', context)
+
+def doctor_input(request, check_in_id):
+    check_in = get_object_or_404(PatientCheckIn, pk=check_in_id, doctor=request.user)
+
+    try:
+        info = DoctorPatientInfo.objects.get(patient_check_in=check_in)
+        form = DoctorPatientInfoForm(instance=info)
+    except DoctorPatientInfo.DoesNotExist:
+        form = DoctorPatientInfoForm()
+
+    if request.method == 'POST':
+        form = DoctorPatientInfoForm(request.POST)
+        if form.is_valid():
+            info = form.save(commit=False)
+            info.patient_check_in = check_in
+            info.save()
+            return redirect('doctor_dashboard')
+
+    return render(request, 'doctor_form.html', {'form': form, 'check_in': check_in})
+
+#create doctor_form.html, put the following:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Input Form</title>
+</head>
+<body>
+    <h1>Doctor Input for {{ check_in.patient }}</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+#in doctor_dashboard.html:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Dashboard</title>
+    <a href="{% url 'logout' %}">Logout</a>
+</head>
+<body>
+    <h1>Doctor Dashboard</h1>
+    <select id="patientCase" onchange="this.form.submit()">
+        <option value="">--Please choose an active patient file--</option>
+        {% for case in open_cases %}
+            <option value="{{ case.id }}">{{ case.patient.first_name }} {{ case.patient.last_name }}</option>
+        {% endfor %}
+    </select>
+    {% if selected_case %}
+    <p>Selected Case: {{ selected_case }}</p>
+    <form method="POST" action="{% url 'doctor_input' selected_case.id %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+{% endif %}
+
+# in forms.py:
+class DoctorPatientInfoForm(forms.ModelForm):
+    heart_rate = forms.CharField(max_length=10, label='Heart Rate (BPM)')
+    blood_pressure = forms.CharField(max_length=10, label='Blood Pressure (ex: 120/80)')
+
+    test_type = forms.ChoiceField(choices=TEST_CHOICES)
+
+    notes = forms.CharField(widget=forms.Textarea)
+    prescriptions = forms.CharField(widget=forms.Textarea)
+    diagnoses = forms.CharField(widget=forms.Textarea)
+    discharge_notes = forms.CharField(widget=forms.Textarea, required=False)
+
+    class Meta:
+        model = DoctorPatientInfo
+        fields = ['heart_rate', 'blood_pressure', 'test_type',
+                  'notes', 'prescriptions', 'diagnoses', 'discharge_notes']
