@@ -1,0 +1,27 @@
+#Add to doctor_form
+<form>
+        <label for="diagnosis">Diagnosis:</label>
+        <select id="diagnosis" name="diagnosis">
+            <option value="Liver Disease">Liver Disease</option>
+            <option value="Heart Disease">Heart Disease</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Anemia">Anemia</option>
+        </select>
+        <label for="prescription">Prescription:</label>
+        <select id="prescription" name="prescription">
+            <option value="Penicillin">Penicillin</option>
+            <option value="Amoxicillin">Amoxicillin</option>
+            <option value="Ibuprofen">Ibuprofen</option>
+            <option value="Prednisone">Prednisone</option>
+        </select>
+    </form>
+
+
+##Pop up script. Opens a new window with the target html file. Likely need to point to the page saved to the server rather than the html file. This can be edited as needed.
+## Add to Doctor_Dashboard???
+<script>
+    function openNewWindow() {
+        var myWindow = window.open("doctor_form.html", "", "width=700,height=500");
+    }
+</script>
+
