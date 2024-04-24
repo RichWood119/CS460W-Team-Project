@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Patient Form</title>
+</head>
+<body>
+    <h1>New Patient Form</h1>
+    <form method="POST" action="{% url 'new_patient' %}"> {% csrf_token %}
+
+        <h2>Personal Information</h2>
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br>
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br>
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" required><br>
+        <label for="phone_number">Phone Number:</label><br>
+        <input type="tel" id="phone_number" name="phone_number" required><br>
+
+
+        <h2>Emergency Contacts</h2>
+        <label for="ec1_name">Contact 1 Name:</label><br>
+        <input type="text" id="ec1_name" name="ec1_name" required><br>
+        <label for="ec1_rel">Contact 1 Relationship:</label><br>
+        <input type="text" id="ec1_rel" name="ec1_rel" required><br>
+        <label for="ec1_phone">Contact 1 Phone Number:</label><br>
+        <input type="tel" id="ec1_phone" name="ec1_phone" required><br>
+        <label for="ec2_name">Contact 2 Name:</label><br>
+        <input type="text" id="ec2_name" name="ec2_name" required><br>
+        <label for="ec2_rel">Contact 2 Relationship:</label><br>
+        <input type="text" id="ec2_rel" name="ec2_rel" required><br>
+        <label for="ec2_phone">Contact 2 Phone Number:</label><br>
+        <input type="tel" id="ec2_phone" name="ec2_phone" required><br>
+
+
+        <h2>Today's Visit</h2>
+        <label for="visit_reason">Reason for ER visit today:</label><br>
+        <textarea id="visit_reason" name="visit_reason" required></textarea><br>
+
+
+        <h2>Medical History</h2>
+        <label for="allergies">Allergies:</label><br>
+        <textarea id="allergies" name="allergies"></textarea><br>
+        <label for="problems">Current Medical Problems/Diagnoses:</label><br>
+        <textarea id="medical_problems" name="medical_problems"></textarea><br>
+        <label for="medications">Current Medications:</label><br>
+        <textarea id="medications" name="medications"></textarea><br>
+
+        
+        <h2>Insurance</h2>
+        <label for="insurance">Do you have health insurance?</label>
+        <select id="insurance" name="insurance" required>
+            <option value="True">Yes</option>
+            <option value="False">No</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>Please double-check all information before submitting.</p>
+</body>
+</html>

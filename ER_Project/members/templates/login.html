@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <script>
+            window.location.href = "{% url 'dashboard' %}";
+        </script>
+    {% else %}
+    <h1>ER Management System</h1>
+        <form method="POST" action="{% url 'login' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="{% url 'register' %}">Create one</a></p>
+    {% endif %}
+{% endblock %}
+
+<button type="button" onclick="window.location.href='register'">Create Account</button>
+<button type="button" onclick="window.location.href='new_patient'">New Patient</button>
+<button type="button" onclick="window.location.href='doctor'">Doctor</button>
+<button type="button" onclick="window.location.href='nurse'">Nurse</button>
+<button type="button" onclick="window.location.href='admitting_staff'">Admitting Staff</button>
+<button type="button" onclick="window.location.href='billing_staff'">Billing Staff</button>
+</script>

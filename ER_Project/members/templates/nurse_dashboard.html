@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Patient Case</title>
+</head>
+<body>
+  <h1>Select a currently open patient case</h1>
+  <select id="patientCase">
+    <option value="">--Please choose an active patient file--</option>
+    {% for case in assigned_cases %}
+        <option value="{{ case.id }}">{{ case.patient.first_name }} {{ case.patient.last_name }}</option>
+    {% endfor %}
+  </select>
+
+    <div style="float: right;">
+      <form method="POST">
+          {% csrf_token %}
+          <input type="hidden" name="patient_check_in_id" value="{{ case.id }}">
+          {{ form.as_p }}
+          <button type="submit">Update Info</button>
+        <a href="{% url 'logout' %}">Logout</a>
+      </form>
+
+      <!--
+          {% for case in open_cases %}
+              <option value="{{ case.id }}">{{ case.patient.first_name }} {{ case.patient.last_name }}</option>
+          {% endfor %}
+    </select>
+    <div style="float: right;">
+        <form>
+            <label for="heartRate">Heart Rate:</label><br>
+            <input type="text" id="heartRate" name="heartRate"><br>
+            <label for="bloodPressure">Blood Pressure:</label><br>
+            <input type="text" id="bloodPressure" name="bloodPressure"><br>
+            <label for="tests">Requesting Tests:</label><br>
+            <select id="tests" name="tests">
+                <option value="">Please choose a test</option>
+                Add more options as needed -->
+                <!-- <option value="redBloodCell">Red blood cell</option>
+                <option value="whiteBloodCell">White blood cell</option>
+                <option value="liverFunction">Liver function</option>
+                <option value="renalFunction">Renal function</option>
+                <option value="electrolyteTest">Electrolyte test</option>
+                <option value="xRay">X-ray</option>
+                <option value="ctScan">CT scan</option>
+                <option value="mri">MRI</option>
+                <option value="urinaryTest">Urinary Test</option>
+                <option value="stoolTest">Stool test</option>
+            </select><br>
+            <label for="notes">Notes:</label><br>
+            <textarea id="notes" name="notes"></textarea><br>
+            <label for="dischargeNotes">Discharge Notes:</label><br>
+            <textarea id="dischargeNotes" name="dischargeNotes"></textarea><br>
+            <input type="submit" value="Submit">
+            <a href="{% url 'logout' %}">Logout</a>
+        </form>
+    </div>
+</body>
+</html> -->

@@ -1,0 +1,24 @@
+{% load static %}  <!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}ER Project{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            {% if user.is_authenticated %}
+                <p>Welcome, {{ user.username }}</p>
+                <!-- <a href="{% url 'dashboard' %}">Dashboard</a>
+                <a href="{% url 'logout' %}">Logout</a> -->
+            {% else %}
+                <!-- <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'register' %}">Register</a> -->
+            {% endif %}
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

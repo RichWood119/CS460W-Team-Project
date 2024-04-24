@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Dashboard</title>
+    <a href="{% url 'logout' %}">Logout</a>
+    <script>
+      function openNewWindow() {
+          var myWindow = window.open("doctor_form", "", "width=700,height=500");
+      }
+    </script>
+</head>
+<body>
+    <h1>Patient Case</h1>
+    <a href="{% url 'doctor_form' %}" target="_blank">Open Doctor Form in New Window</a>
+</body>
+</html>
+    <select id="patientCase" onchange="this.form.submit()">
+        <option value="">--Please choose an active patient file--</option>
+        {% for case in open_cases %}
+            <option value="{{ case.id }}">{{ case.patient.first_name }} {{ case.patient.last_name }}</option>
+        {% endfor %}
+    </select>
+
+    {% if selected_case %}
+        <p>Selected Case: {{ selected_case }}</p>
+        <form method="POST" action="{% url 'doctor_input' selected_case.id %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit">
+        </form>
+    {% endif %}
+</body>
+</html>
