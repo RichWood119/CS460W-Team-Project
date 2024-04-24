@@ -21,6 +21,3 @@ urlpatterns = [
     path('dashboard/billing/', views.billing_staff_dashboard, name='billing_dashboard'),
     path('default/', views.default, name='default'),
 ]
-
-
-#richards test commit
