@@ -15,10 +15,11 @@ urlpatterns = [
     path('dashboard/nurse/', views.nurse_dashboard, name='nurse_dashboard'),
     path('dashboard/admitting/', views.admitting_staff_dashboard, name='admitting_dashboard'),
     path('dashboard/admitting/checkin/', patient_checkin, name='patient_checkin'),
-    path('doctor_form/', views.doctor_form, name='doctor_form'),
-    #path('dashboard/doctor/doctor_form/', views.doctor_input, name='doctor_form'),
-    #path('dashboard/doctor/input/<int:check_in_id>/', doctor_input, name='doctor_input'),
+    path('dashboard/doctor/input/<int:check_in_id>/', views.doctor_input, name='doctor_input'),
+    path('dashboard/doctor/form/<int:case_id>/', views.doctor_form, name='doctor_form'),
+    path('dashboard/nurse/input/<int:check_in_id>/', views.nurse_input, name='nurse_input'),
+    path('case/edit/<int:case_id>/', views.edit_case, name='edit_case'),
+    path('dashboard/nurse/form/<int:case_id>/', views.nurse_form, name='nurse_form'),
     path('dashboard/billing/', views.billing_staff_dashboard, name='billing_dashboard'),
     path('default/', views.default, name='default'),
 ]
-
