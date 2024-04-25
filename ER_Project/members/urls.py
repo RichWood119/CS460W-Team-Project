@@ -22,4 +22,3 @@ urlpatterns = [
     path('default/', views.default, name='default'),
 ]
 
-#test comment
