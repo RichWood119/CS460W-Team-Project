@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Dashboard</title>
+</head>
+<body>
+    <h1>Doctor Dashboard</h1>
+    <a href="{% url 'logout' %}">Logout</a>
+    <h2>Open Cases:</h2>
+    <ul>
+        {% for case in open_cases %}
+        <li>{{ case.patient.first_name }} {{ case.patient.last_name }} - <a href="{% url 'doctor_form' case.id %}">Edit</a></li>
+        {% endfor %}
+    </ul>
+
+    {% if selected_case %}
+    <h2>Edit Information for {{ selected_case.patient.first_name }} {{ selected_case.patient.last_name }}</h2>
+    <form method="post" action="{% url 'doctor_input' selected_case.id %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+    {% endif %}
+</body>
+</html>
